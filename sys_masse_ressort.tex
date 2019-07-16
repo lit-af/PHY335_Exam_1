@@ -1,0 +1,29 @@
+\section{Système masse ressort}
+\raggedright
+
+\subsection{Équations du mouvement}
+\begin{tabular}{lll}
+Valeur & Formule & Unitée \\\hline
+Position & \(x(t)= A\cos (\omega t + \phi)\) & m\\
+Vitesse & \(v(t)= -\omega A \sin (\omega t +\phi)\) & m/s\\
+Accélération & \(a(t)= -\omega^2 A \cos (\omega t +\phi)\)& m/s$^2$\\\hline
+Vitesse angulaire & \(\omega = \sqrt{\frac{k}{m}} = 2\pi f = \frac{2\pi}{T}\) & rad/s \\[8pt]
+Phase totale & \(\psi=\omega t +\phi \) & rad \\%[8pt]
+Compression &\(\Delta L = \frac{mg\sin (\theta)}{k} \) & m \\[7pt]\hline\rule{0pt}{10pt}\hspace{-4pt}
+Const. ressort & \(k = m\omega^2\) & N/m\\
+Amplitude & \(A\) & m\\
+\end{tabular}%
+\subsubsection{Conditions initiales (à $t=0$)}
+Si on connait $x_0$ et $v_0$
+\begin{align*}
+    A &= \sqrt{x^2_0 + \qty(v_0/\omega)^2}\\
+    \omega t_0+\phi &= \tan^{-1}\qty(-v_0/\omega x_0)
+\end{align*}
+
+\subsection{Énergie}
+\begin{tabular}{lll}
+Valeur & Formule & Unitée \\\hline\rule{-3pt}{16pt}
+Cinétique & \(K(t)= \frac{k}{2}A^2\sin^2 (\omega t + \phi)\) & Joules\\\rule{-3pt}{16pt}
+Potentielle & \(U(t)= \frac{k}{2}A^2 \cos^2 (\omega t +\phi)\) & Joules\\
+Totale & \(E= \frac{k}{2} A^2\)& Joules
+\end{tabular}%
